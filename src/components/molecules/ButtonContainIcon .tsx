@@ -10,7 +10,7 @@ type Props = {
 const ButtonContainIcon: React.FC<Props> = ({ className }) => {
   return (
     <PrimaryButton css={styles.button} className={className}>
-      <Icon css={styles.icon} src={"/search.png"} width={20} height={20} />
+      <Icon css={styles.icon} src={"/img/ico-google.png"} width={20} height={20} />
       <span>Googleでログイン</span>
     </PrimaryButton>
   );
