@@ -17,9 +17,7 @@ import MoreOutlinedIcon from "@mui/icons-material/MoreOutlined";
 import MoreIcon from "@mui/icons-material/More";
 import { css } from "@emotion/react";
 
-type Props = {};
-
-const MenuList: React.FC<Props> = () => {
+const MenuList = () => {
   const [active, setActive] = useState<string>("");
   return (
     <div css={styles.base}>
@@ -103,7 +101,7 @@ const styles = {
   base: css`
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
   `,
 };
 
