@@ -37,7 +37,7 @@ const MenuList = () => {
         setActive={setActive}
         name={"検索"}
       >
-        検索
+        話題を検索
       </MenuListItem>
       <MenuListItem
         icon={NotificationsNoneIcon}

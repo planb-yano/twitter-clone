@@ -13,7 +13,7 @@ const SideMenu = () => {
       </div>
       <MenuList />
       <div css={styles.button}>
-        <PrimaryButton>Tweet</PrimaryButton>
+        <PrimaryButton>ツイートする</PrimaryButton>
       </div>
       <div css={styles.profile}>
         <ProfileInfo />
