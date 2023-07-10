@@ -1,5 +1,5 @@
 import React from "react";
-import PrimaryButton from "../atom/PrimaryButton";
+import SecondaryButton from "../atom/SecondaryButton";
 import Icon from "../atom/Icon";
 import { css } from "@emotion/react";
 
@@ -9,10 +9,10 @@ type Props = {
 
 const ButtonContainIcon: React.FC<Props> = ({ className }) => {
   return (
-    <PrimaryButton css={styles.button} className={className}>
+    <SecondaryButton css={styles.button} className={className}>
       <Icon css={styles.icon} src={"/img/ico-google.png"} width={20} height={20} />
       <span>Googleでログイン</span>
-    </PrimaryButton>
+    </SecondaryButton>
   );
 };
 

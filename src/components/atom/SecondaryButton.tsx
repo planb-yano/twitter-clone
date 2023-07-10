@@ -2,11 +2,11 @@ import React from "react";
 import { css } from "@emotion/react";
 
 type Props = {
-  className?: string;
   children: React.ReactNode;
+  className?: string;
 };
 
-const PrimaryButton: React.FC<Props> = ({ className, children }) => {
+const SecondaryButton: React.FC<Props> = ({ children, className }) => {
   return (
     <button css={styles.base} className={className}>
       {children}
@@ -16,19 +16,17 @@ const PrimaryButton: React.FC<Props> = ({ className, children }) => {
 
 const styles = {
   base: css`
-    padding: 15px 100px;
-    background-color: #0ea9fd;
-    color: white;
-    font-size: 21px;
-    font-weight: bold;
+    border: 1px solid silver;
+    background: transparent;
     border-radius: 9999px;
-    border: none;
+    padding: 5px 20px;
     cursor: pointer;
-    transition: all .2s;
+    transition: all .5s;
     &:hover {
-      opacity: .9;
+      background-color: #f3faff;
+      border-color: #b6e0ff;
     }
   `,
 };
 
-export default PrimaryButton;
+export default SecondaryButton;
