@@ -1,8 +1,8 @@
 import React from "react";
 import Icon from "../atom/Icon";
-import MenuList from "../organisms/MenuList";
+import MenuList from "./MenuList";
 import PrimaryButton from "../atom/PrimaryButton";
-import ProfileInfo from "./ProfileInfo";
+import ProfileInfo from "../molecules/ProfileInfo";
 import { css } from "@emotion/react";
 
 const SideMenu = () => {
