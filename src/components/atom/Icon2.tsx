@@ -33,6 +33,8 @@ type Props = {
         SvgIconPropsColorOverrides
       >
     | undefined;
+  active?: boolean;
+  setActive?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const Icon2: React.FC<Props> = ({
@@ -40,14 +42,23 @@ const Icon2: React.FC<Props> = ({
   icon,
   fontSize = "large",
   color,
+  active,
+  setActive,
 }) => {
   const Icon = icon;
+  const handleIcon = () => {
+    if (setActive) {
+      setActive(!active);
+    }
+  };
+
   return (
     <Icon
       css={styles.base}
       className={className}
       fontSize={fontSize}
       color={color}
+      onClick={handleIcon}
     />
   );
 };
