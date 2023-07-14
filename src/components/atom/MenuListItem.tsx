@@ -1,7 +1,7 @@
 import { SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 import React from "react";
-import Icon2 from "../atom/Icon2";
+import Icon2 from "./Icon2";
 import { css } from "@emotion/react";
 
 type Props = {
