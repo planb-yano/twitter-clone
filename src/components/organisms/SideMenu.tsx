@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "../atom/Icon";
-import MenuList from "./MenuList";
+import MenuList from "../molecules/MenuList";
 import PrimaryButton from "../atom/PrimaryButton";
 import ProfileInfo from "../molecules/ProfileInfo";
 import { css } from "@emotion/react";
